@@ -1,4 +1,4 @@
-- name: Deploy to Google App Engine
+name: Deploy to Google App Engine
   uses: atRobertoFlores/gae_deploy_action@master
   with:
     service_account: ${{ secrets.SERVICE_ACCOUNT }}
