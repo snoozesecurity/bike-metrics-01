@@ -8,5 +8,6 @@ jobs:
     # This job runs on Linux
     runs-on: ubuntu-latest
     steps:
-      - name: Google App Engine (GAE) Deploy
-        uses: atRobertoFlores/gae_deploy_action@1.2
+      - name: Publish app to Google App Engine
+        uses: zxyle/publish-gae-action@v2.3
+
