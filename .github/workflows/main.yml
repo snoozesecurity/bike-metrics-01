@@ -1,5 +1,5 @@
-- name: Initialize Google Cloud SDK
-  uses: zxyle/publish-gae-action@master
+- name: Publish app to Google App Engine
+  uses: zxyle/publish-gae-action@v2.3
   with:
     service_account_email: ${{ secrets.GCP_SA_EMAIL }}
     service_account_key: ${{ secrets.GCP_SA_KEY }}
