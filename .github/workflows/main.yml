@@ -8,7 +8,6 @@ jobs:
     # This job runs on Linux
     runs-on: ubuntu-latest
     steps:
-      - name: Publish app to Google App Engine
-        uses: zxyle/publish-gae-action@v2.3
-        with:
-          gae_config_path: ../../app.yaml
+      - name: Deploy App Engine
+        uses: claudiuri/deploy-gae-action@v1.2
+
