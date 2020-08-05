@@ -1,5 +1,12 @@
-name: Deploy to Google App Engine
-uses: atRobertoFlores/gae_deploy_action@master
-with:
-  service_account: ${{ secrets.SERVICE_ACCOUNT }}
-  project_name: ${{ secrets.PROJECT_ID }}
+name: Hello Workd on App Engine
+# This workflow is triggered on pushes to the repository.
+on: [push]
+
+jobs:
+  build:
+    name: Hello World
+    # This job runs on Linux
+    runs-on: ubuntu-latest
+    steps:
+      - name: Google App Engine (GAE) Deploy
+        uses: atRobertoFlores/gae_deploy_action@1.2
